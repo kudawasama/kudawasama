@@ -8,12 +8,6 @@
 
 ![Banner](./kudawasama_github_profile.png)
 
-<p align="left">
-  <a href="https://github.com/kudawasama?tab=followers"><img src="https://img.shields.io/github/followers/kudawasama?style=for-the-badge&logo=github&color=c97a3c" alt="followers" /></a>
-  <a href="https://github.com/kudawasama?tab=repositories"><img src="https://img.shields.io/badge/repos-públicos-2dd4bf?style=for-the-badge&logo=github" alt="repos" /></a>
-  <img src="https://komarev.com/ghpvc/?username=kudawasama&color=c97a3c&style=for-the-badge&label=visitas+al+perfil" alt="profile views" />
-</p>
-
 ---
 
 Construyo **sistemas con IA** que resuelven problemas reales, no demos: agentes con memoria persistente, ruteo híbrido entre razonamiento simbólico y modelos pequeños, RPA con visión artificial, y pipelines ETL que ahorran horas de trabajo manual.
