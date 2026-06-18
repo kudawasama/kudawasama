@@ -113,16 +113,58 @@ Cuando no hay API, queda la pantalla. pyautogui mueve el mouse, Tesseract lee lo
 
 ---
 
-## 📊 GitHub Stats
+## 📐 Lo que hay detrás de los proyectos
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kudawasama&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" height="170" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kudawasama&theme=radical&hide_border=true" height="170" alt="Streak Stats" />
-</p>
+Números reales, medidos desde el código y los repos. No son métricas de "popularidad" — son **métricas de trabajo**.
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kudawasama&layout=compact&theme=radical&hide_border=true&count_private=true&langs_count=8" height="160" alt="Top Languages" />
-</p>
+<table>
+  <tr>
+    <th>Proyecto</th>
+    <th>Lenguaje</th>
+    <th>Commits</th>
+    <th>Líneas de código</th>
+    <th>Qué hace</th>
+  </tr>
+  <tr>
+    <td><b>NucleoNexus</b></td>
+    <td>Python</td>
+    <td>59+</td>
+    <td>~5,000</td>
+    <td>IA local con Qwen 0.5B · 15 skills builtins · 3 memorias persistentes · ReAct</td>
+  </tr>
+  <tr>
+    <td><b>DTE Manager</b></td>
+    <td>Python</td>
+    <td>1 (visible)</td>
+    <td>~2,600</td>
+    <td>7 microservicios · FastAPI + PostgreSQL + Docker · CLI portable con Click</td>
+  </tr>
+  <tr>
+    <td><b>Bot AX Contable</b></td>
+    <td>Python</td>
+    <td>19</td>
+    <td>~1,140</td>
+    <td>RPA con pyautogui + Tesseract OCR · GUI dual tkinter/PyQt6 · versionado automático</td>
+  </tr>
+  <tr>
+    <td><b>Kudawa MMORPG</b></td>
+    <td>Python + C#</td>
+    <td>231</td>
+    <td>~10,000+</td>
+    <td>62 archivos · motor de combate Morfeus · 6+ enemigos modelados · narrativa IA</td>
+  </tr>
+</table>
+
+### Stack por capa
+
+| Capa | Tecnologías | Experiencia |
+|------|-------------|-------------|
+| **IA local** | Ollama, Qwen 2.5, TF-IDF, embeddings, ReAct | Sistemas en producción desde 2025 |
+| **Backend** | FastAPI, Flask, AsyncPG, SQLAlchemy 2.0, Click | 3+ años construyendo APIs |
+| **Bases de datos** | PostgreSQL, SQLite, Redis | Diseño de esquemas con CC_OC + CC_FC |
+| **RPA / OCR** | pyautogui, Tesseract, OpenCV | Bot_AX Contable en producción |
+| **Infraestructura** | Docker, WSL2, Cloudflare Tunnel, Nginx | 7 microservicios orquestados |
+| **Frontend** | Vanilla JS (ESM), CSS3, PWA, Glassmorphism | kudawa.com auto-hospedado |
 
 ---
 
