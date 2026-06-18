@@ -115,56 +115,97 @@ Cuando no hay API, queda la pantalla. pyautogui mueve el mouse, Tesseract lee lo
 
 ## 📐 Lo que hay detrás de los proyectos
 
-Números reales, medidos desde el código y los repos. No son métricas de "popularidad" — son **métricas de trabajo**.
+> Números reales, medidos desde el código y los repos. No son métricas de "popularidad" — son **métricas de trabajo**.
 
-<table>
-  <tr>
-    <th>Proyecto</th>
-    <th>Lenguaje</th>
-    <th>Commits</th>
-    <th>Líneas de código</th>
-    <th>Qué hace</th>
-  </tr>
-  <tr>
-    <td><b>NucleoNexus</b></td>
-    <td>Python</td>
-    <td>59+</td>
-    <td>~5,000</td>
-    <td>IA local con Qwen 0.5B · 15 skills builtins · 3 memorias persistentes · ReAct</td>
-  </tr>
-  <tr>
-    <td><b>DTE Manager</b></td>
-    <td>Python</td>
-    <td>1 (visible)</td>
-    <td>~2,600</td>
-    <td>7 microservicios · FastAPI + PostgreSQL + Docker · CLI portable con Click</td>
-  </tr>
-  <tr>
-    <td><b>Bot AX Contable</b></td>
-    <td>Python</td>
-    <td>19</td>
-    <td>~1,140</td>
-    <td>RPA con pyautogui + Tesseract OCR · GUI dual tkinter/PyQt6 · versionado automático</td>
-  </tr>
-  <tr>
-    <td><b>Kudawa MMORPG</b></td>
-    <td>Python + C#</td>
-    <td>231</td>
-    <td>~10,000+</td>
-    <td>62 archivos · motor de combate Morfeus · 6+ enemigos modelados · narrativa IA</td>
-  </tr>
-</table>
+### El ecosistema Kudawa
 
-### Stack por capa
+Cómo se conectan los sistemas que construyo:
 
-| Capa | Tecnologías | Experiencia |
-|------|-------------|-------------|
-| **IA local** | Ollama, Qwen 2.5, TF-IDF, embeddings, ReAct | Sistemas en producción desde 2025 |
-| **Backend** | FastAPI, Flask, AsyncPG, SQLAlchemy 2.0, Click | 3+ años construyendo APIs |
-| **Bases de datos** | PostgreSQL, SQLite, Redis | Diseño de esquemas con CC_OC + CC_FC |
-| **RPA / OCR** | pyautogui, Tesseract, OpenCV | Bot_AX Contable en producción |
-| **Infraestructura** | Docker, WSL2, Cloudflare Tunnel, Nginx | 7 microservicios orquestados |
-| **Frontend** | Vanilla JS (ESM), CSS3, PWA, Glassmorphism | kudawa.com auto-hospedado |
+```
+                         ┌─────────────────────────────────┐
+                         │   kudawa.com  (portfolio PWA)   │
+                         │   FastAPI + PostgreSQL + OAuth  │
+                         └────────────┬────────────────────┘
+                                      │
+              ┌───────────────────────┼───────────────────────┐
+              │                       │                       │
+              ▼                       ▼                       ▼
+    ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
+    │   NucleoNexus    │    │   DTE Manager    │    │  Bot AX Contable │
+    │  IA local (CLI)  │◀──▶│  ETL financiero  │    │   RPA con OCR    │
+    │  Qwen 0.5B +     │    │  FastAPI + 7 μs  │    │  pyautogui +     │
+    │  3 memorias      │    │  Click CLI       │    │  Tesseract       │
+    └────────┬─────────┘    └────────┬─────────┘    └────────┬─────────┘
+             │                       │                       │
+             ▼                       ▼                       ▼
+       ┌──────────┐           ┌──────────────┐         ┌──────────┐
+       │ Ollama   │           │ PostgreSQL   │         │ AX (sin  │
+       │ SQLite   │           │ SQLite (CLI) │         │  API)    │
+       │ TF-IDF   │           │ pandas       │         │ OCR      │
+       └──────────┘           └──────────────┘         └──────────┘
+```
+
+### Proyectos en cifras
+
+```
+╔════════════════════════════════════════════════════════════════════╗
+║  🧠 NUCLEONEXUS              Python · IA local                      ║
+║────────────────────────────────────────────────────────────────────║
+║  59+ commits  ·  ~5,000 LOC  ·  15 skills builtins                 ║
+║  3 memorias persistentes  ·  ReAct + self-consistency              ║
+║  100% local con Ollama · sin GPU · ~500 MB RAM                     ║
+╚════════════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════════════╗
+║  ⭐ DTE MANAGER (REPORTE MENSUALES)   Python · ETL                  ║
+║────────────────────────────────────────────────────────────────────║
+║  7 microservicios  ·  ~2,600 LOC  ·  FastAPI + PostgreSQL          ║
+║  Click CLI portable  ·  Docker Compose  ·  Cron 9 AM               ║
+║  Dedup pre-merge  ·  CC_OC + CC_FC  ·  Reporte Excel 9 hojas       ║
+╚════════════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════════════╗
+║  🤖 BOT AX CONTABLE          Python · RPA con visión                ║
+║────────────────────────────────────────────────────────────────────║
+║  19 commits  ·  ~1,140 LOC  ·  pyautogui + Tesseract OCR           ║
+║  GUI dual tkinter/PyQt6  ·  versionado desde git                   ║
+║  Tests unitarios  ·  launchers .bat portables                      ║
+╚════════════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════════════╗
+║  🎮 KUDAWA MMORPG            Python + C# · Juego                    ║
+║────────────────────────────────────────────────────────────────────║
+║  231 commits  ·  ~10,000+ LOC  ·  62 archivos                      ║
+║  Motor de combate Morfeus  ·  6+ enemigos modelados                ║
+║  Bridge Telegram + Web  ·  narrativa con IA                        ║
+╚════════════════════════════════════════════════════════════════════╝
+```
+
+### Stack por capa — cómo se compone un sistema
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│   ░░░ IA LOCAL ░░░                                                  │
+│   ▸ Ollama  ▸ Qwen 2.5  ▸ Llama 3.2  ▸ TF-IDF  ▸ embeddings  ▸ ReAct│
+│                                                                     │
+│   ░░░ BACKEND ░░░                                                   │
+│   ▸ FastAPI  ▸ Flask  ▸ Click CLI  ▸ AsyncPG  ▸ SQLAlchemy 2.0     │
+│                                                                     │
+│   ░░░ BASES DE DATOS ░░░                                            │
+│   ▸ PostgreSQL  ▸ SQLite  ▸ Redis  ▸ Esquemas con CC_OC + CC_FC     │
+│                                                                     │
+│   ░░░ RPA / VISIÓN ░░░                                              │
+│   ▸ pyautogui  ▸ Tesseract OCR  ▸ Pillow  ▸ tkinter  ▸ PyQt6       │
+│                                                                     │
+│   ░░░ INFRAESTRUCTURA ░░░                                           │
+│   ▸ Docker  ▸ WSL2  ▸ Cloudflare Tunnel  ▸ Nginx  ▸ GitHub Actions  │
+│                                                                     │
+│   ░░░ FRONTEND ░░░                                                  │
+│   ▸ Vanilla JS (ESM)  ▸ CSS3  ▸ PWA  ▸ Glassmorphism  ▸ Nerd Fonts │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
