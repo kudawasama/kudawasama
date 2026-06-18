@@ -59,46 +59,41 @@ Empecé automatizando mi propio trabajo como Analista de Costos. Cada sistema qu
 
 ## 🧠 NucleoNexus — IA local ultraligera
 
-> **Un LLM pequeño (Qwen 0.5B) con comportamiento PRO mediante arquitectura, no por tamaño.**
+> Un LLM pequeño (Qwen 0.5B) con comportamiento PRO mediante arquitectura, no por tamaño.
 
-<a href="https://github.com/kudawasama/NucleoNexus">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kudawasama&repo=NucleoNexus&theme=radical&show_owner=true" alt="NucleoNexus" />
-</a>
+**La idea:** los LLMs pequeños son brillantes pero necesitan un sistema que los potencie. Nexus le da memoria persistente (3 tipos), ruteo híbrido (simbólico + SLM), function calling nativo, y un agente que encadena tools con ReAct + self-consistency. Corre 100% local, sin GPU, ~500 MB de RAM.
 
-- ✅ 3 memorias persistentes (episódica, semántica, procedural) con SQLite + TF-IDF
-- ✅ Ruteo híbrido: motor simbólico + SLM con Qwen 2.5 vía Ollama
-- ✅ Function calling nativo sin OpenAI — 15+ skills builtins
-- ✅ ReAct + self-consistency + structured generation
-- ✅ 100% local, sin GPU, ~500 MB de RAM, soporta Qwen/Llama/Phi
-- ✅ Agente con paso de síntesis que redacta respuestas usando el SLM
+- 3 memorias persistentes (episódica, semántica, procedural) con SQLite + TF-IDF
+- Ruteo híbrido: motor simbólico + SLM con Qwen 2.5 vía Ollama
+- Function calling nativo sin OpenAI — 15+ skills builtins
+- ReAct + self-consistency + structured generation
+- 100% local, sin GPU, soporta Qwen/Llama/Phi
+
+🔗 [github.com/kudawasama/NucleoNexus](https://github.com/kudawasama/NucleoNexus)
 
 ---
 
 ## 🤖 Bot AX Contable — RPA con visión artificial
 
-> **Automatización de registro contable en AX usando OCR y GUI dual.**
+> Automatización de registro contable en AX usando OCR y GUI dual.
 
-<a href="https://github.com/kudawasama/Bot_AX_Contable">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kudawasama&repo=Bot_AX_Contable&theme=radical&show_owner=true" alt="Bot AX Contable" />
-</a>
+Cuando no hay API, queda la pantalla. pyautogui mueve el mouse, Tesseract lee los números, y el bot clica donde debe. Con fallback automático entre tkinter y PyQt6, versionado desde git, y logger estructurado.
 
-- ✅ pyautogui + Tesseract OCR para automatizar formularios sin API
-- ✅ GUI dual: tkinter (liviano) + PyQt6 (premium) con fallback automático
-- ✅ Versionado semántico automático desde git
-- ✅ Logger estructurado con rotación
-- ✅ Tests unitarios + launchers `.bat` portables con detección de venv
+- pyautogui + Tesseract OCR para automatizar formularios sin API
+- GUI dual: tkinter (liviano) + PyQt6 (premium) con fallback automático
+- Versionado semántico automático desde git
+- Logger estructurado con rotación
+- Tests unitarios + launchers `.bat` portables con detección de venv
+
+🔗 [github.com/kudawasama/Bot_AX_Contable](https://github.com/kudawasama/Bot_AX_Contable)
 
 ---
 
 ## 💰 mi-app-utm — Finanzas personales para Chile
 
-> **Aplicación web privada y ligera para controlar tus finanzas, hecha en Chile.**
+> Aplicación web privada y ligera para controlar tus finanzas, hecha en Chile.
 
-<a href="https://github.com/kudawasama/mi-app-utm">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kudawasama&repo=mi-app-utm&theme=radical&show_owner=true" alt="mi-app-utm" />
-</a>
-
-🌐 [Ver demo en vivo](https://kudawasama.github.io/mi-app-utm/)
+🌐 [Ver demo en vivo](https://kudawasama.github.io/mi-app-utm/) · 🔗 [github.com/kudawasama/mi-app-utm](https://github.com/kudawasama/mi-app-utm)
 
 ---
 
