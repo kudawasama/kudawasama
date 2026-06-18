@@ -37,17 +37,14 @@ Empecé automatizando mi propio trabajo como Analista de Costos. Cada sistema qu
 
 ---
 
-## ⭐ Proyecto Estrella: DTE Manager (Reporte Mensuales)
+## ⭐ DTE Manager (Reporte Mensuales)
 
-> **Lo que me hizo crecer.** Empezó como scripts para no perder 2 días cada mes armando el reporte. Hoy es un sistema con microservicios, bots headless, dashboard web y CLI portable. Lo que el SII no te da, lo construyes tú.
+> Empezó como scripts para no perder 2 días cada mes armando el reporte. Hoy es un sistema con microservicios, bots headless, dashboard web y CLI portable. Lo que el SII no te da, lo construyes tú.
 
-<a href="https://github.com/kudawasama/reporte_mensuales">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kudawasama&repo=reporte_mensuales&theme=radical&show_owner=true" alt="DTE Manager CLI" />
-</a>
+**Lo que aprendí construyendo esto:** dedup antes de merge (facturas duplicadas por guías/OCs), atribución automática de centros de costo (CC_OC + CC_FC), y a diseñar sistemas que corren solos en cron a las 9 AM.
 
-**¿Qué hace?**
 - Ingesta documentos DTE desde i-Construye (portal de la constructora)
-- Dedup antes de merge (fix que aprendí por las malas — facturas duplicadas por guías/OCs repetidas)
+- Dedup antes de merge — fix que aprendí por las malas
 - Atribución automática de centros de costo (CC_OC + CC_FC)
 - Reporte Excel mensual con 9 hojas (5 estándar + 4 analista)
 - Dashboard web con KPIs y filtros por RUT
@@ -55,6 +52,8 @@ Empecé automatizando mi propio trabajo como Analista de Costos. Cada sistema qu
 - Cron programado 9 AM: ingesta c/6h + reporte diario
 
 **Stack:** Python · FastAPI · PostgreSQL · Docker · Playwright · pandas · openpyxl
+
+🔗 [github.com/kudawasama/reporte_mensuales](https://github.com/kudawasama/reporte_mensuales) — [kudawa.com](https://kudawa.com)
 
 ---
 
